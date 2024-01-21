@@ -4,6 +4,7 @@ function renderLicenseBadge(license) {
     if (license === "(no license)") {
         return "";
     } else {
+        license = license.split(" ").join("_");
         return `![Static Badge](https://img.shields.io/badge/license-${license}-green)`;
     }
 }
@@ -80,7 +81,7 @@ ${data.contributing}
 
 ## Tests
 
-${data.test}
+${data.tests}
 
 ## License
 
@@ -88,7 +89,7 @@ ${renderLicenseSection(data.license)}
 
 ## Questions
 
-My GitHub is https://github.com/${data.username}. If you have any questions, reach out to me at ${email}.
+My GitHub is https://github.com/${data.username}. If you have any questions, reach out to me at ${data.email}.
 `;
 }
 

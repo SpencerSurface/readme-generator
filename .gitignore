@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+# Ignore the generated README
+*_README.md
