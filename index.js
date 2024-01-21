@@ -45,7 +45,8 @@ const questions = [
             "GNU GPLv3",
             "ISC License",
             "MIT License",
-            "Unlicense"
+            "Unlicense",
+            "(no license)"
         ]
     },
     {
